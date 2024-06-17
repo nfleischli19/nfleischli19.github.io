@@ -8,9 +8,6 @@ function Intro() {
         <h1>Your Name</h1>
         <p>Welcome to my personal portfolio website where I showcase my work and share my thoughts.</p>
       </div>
-      <div className="intro-image">
-        <img src="path/to/your/image.jpg" alt="Your Name" />
-      </div>
     </section>
   );
 }

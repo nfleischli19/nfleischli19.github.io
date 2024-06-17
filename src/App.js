@@ -13,6 +13,9 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <Intro />
+        <About />
+        <Work />
         <Routes>
           <Route exact path="/" component={Intro} />
           <Route path="/about" component={About} />

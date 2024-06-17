@@ -1,0 +1,14 @@
+.about {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: 70vh; /* Full viewport height */
+    background-image: url('../images/about2.png');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    color: white; /* Ensure text is readable */
+    padding-left: 20px; /* Add padding to the left side */
+  }
+  

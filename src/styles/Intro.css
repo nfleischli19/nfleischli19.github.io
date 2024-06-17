@@ -1,0 +1,45 @@
+/* .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: #de5a5a;
+} */
+
+
+
+  /* Intro.css */
+
+.intro {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: 90vh; /* Full viewport height */
+    background-image: url('../images/intro.png');
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    color: white; /* Ensure text is readable */
+    padding-left: 20px; /* Add padding to the left side */
+  }
+  
+  .intro-text {
+    max-width: 40%; /* Restrict the width of the text container */
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the text for better readability */
+    text-align: left;
+    font: 1.5rem Arial, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .intro-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .intro-text p {
+    font-size: 1.5rem;
+  }
+  
