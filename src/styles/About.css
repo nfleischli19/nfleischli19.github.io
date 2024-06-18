@@ -1,14 +1,95 @@
+/* At the top of your CSS file */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+
 .about {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
-    align-items: center; /* Center items vertically */
+    align-items: flex-start; /* Center items vertically */
     text-align: left; /* Align text to the left */
-    height: 70vh; /* Full viewport height */
     background-image: url('../images/about2.png');
     background-size: cover; /* Cover the entire section */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     color: white; /* Ensure text is readable */
     padding-left: 20px; /* Add padding to the left side */
+    padding: 2rem;
+
+  }
+  /* About.css */
+
+  
+  .about-text {
+    width: 50%;
+    margin-right: auto;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 2rem;
   }
   
+  .about-text h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content p {
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .about-content a:hover {
+    text-decoration: underline;
+  }
+  
+  .tools {
+    margin-top: 2rem;
+  }
+  
+  .tools h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tools p {
+    line-height: 1.6;
+  }
+  /* Add this to your main CSS file or a relevant stylesheet */
+
+/* Style for the button */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 0; /* Remove left padding for small screens */
+    }
+  
+    .about-text {
+      width: 90%; /* Full width for small screens */
+      text-align: center; /* Center text for small screens */
+      margin-right: 0; /* Remove right margin */
+    }
+  }

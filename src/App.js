@@ -16,6 +16,7 @@ function App() {
         <Intro />
         <About />
         <Work />
+        <Blog />
         <Routes>
           <Route exact path="/" component={Intro} />
           <Route path="/about" component={About} />

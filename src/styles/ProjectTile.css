@@ -1,0 +1,39 @@
+/* ProjectTile.css */
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    margin: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    text-align: left;
+  }
+  
+  .tile-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .tile-content h3 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .tile-content p {
+    margin: 0.5rem 0;
+  }
+  
+  .tile-price {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
