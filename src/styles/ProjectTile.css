@@ -1,39 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 /* ProjectTile.css */
 
+.project-tiles-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch; /* Ensure tiles stretch to fill the container */
+}
+
 .project-tile {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  width: calc(25% - 1rem); /* Smaller width */
+  height: calc(25% - 1rem); /* Smaller height */
+  margin: 0.5rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Inter', sans-serif;
+}
+
+.tile-content {
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  color: black;
+  padding: 1.5rem;
+  border-radius: 0 0 12px 12px;
+  flex: 1; /* Allow content to take remaining space */
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Smaller dynamic font size */
+}
+
+.tile-content h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: calc(1vw + 1vh + 0.5vmin); /* Smaller dynamic font size for headers */
+}
+
+.tile-content p {
+  margin: 0.5rem 0;
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Smaller dynamic font size for paragraphs */
+}
+
+.tile-price {
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Smaller dynamic font size for prices */
+  color: #ccc;
+}
+
+.tile-date {
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Smaller dynamic font size for dates */
+  color: #777;
+}
+
+.tile-image {
+  width: 100%;
+  height: auto; /* Adjust the height dynamically */
+  object-fit: contain; /* Ensure the image covers the entire area */
+  object-position: center; /* Center the image within its container */
+  border-radius: 0;
+}
+
+@media (max-width: 768px) {
+  .project-tile {
+    width: calc(50% - 1rem); /* Adjust for smaller screens */
+    height: calc(50% - 1rem); /* Adjust for smaller screens */
     flex-direction: column;
-    justify-content: flex-end;
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    max-width: 400px;
-    height: 500px;
-    margin: 1rem;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    color: white;
-    text-align: left;
   }
-  
-  .tile-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 1rem;
+
+  .tile-image {
+    width: 100%;
+    height: auto;
     border-radius: 0 0 12px 12px;
   }
-  
-  .tile-content h3 {
-    margin: 0;
-    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+  .project-tile {
+    width: calc(100% - 1rem); /* Adjust for very small screens */
+    height: calc(100% - 1rem); /* Adjust for very small screens */
   }
-  
-  .tile-content p {
-    margin: 0.5rem 0;
-  }
-  
-  .tile-price {
-    font-size: 1rem;
-    color: #ccc;
-  }
-  
+}

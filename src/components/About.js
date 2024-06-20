@@ -1,13 +1,30 @@
 import React from 'react';
 import '../styles/About.css';
+import ToolTile from './ToolTile';
+import pitching from '../images/pitching.png'; // Adjust the path accordingly
+import altEdit from '../images/altEdit.png'; // Example tool image, adjust path accordingly
 
 function About() {
+  const tools = [
+    {
+      image: altEdit,
+      title: 'AltEdit',
+      description: 'Accessible Screenshot tool for BLV users',
+      primary: "white",
+      secondary: 'black', 
+    },
+    // Add more tool objects here
+  ];
+
   return (
     <section className="about">
       <div className="about-text">
         <h2>About Me</h2>
         <AboutContent />
-        <Tools />
+        <Tools tools={tools} />
+      </div>
+      <div className="about-image">
+        <img src={pitching} alt="Your Name" />
       </div>
     </section>
   );
@@ -32,17 +49,26 @@ function AboutContent() {
         “The best way to predict the future is to invent it.” - Alan Kay
       </p>
       <p>
-        <a href="https://www.linkedin.com/in/natefleischli/" class="button">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/natefleischli/" className="button">LinkedIn</a>
       </p>
     </div>
   );
 }
 
-function Tools() {
+function Tools({ tools }) {
   return (
     <div className="tools">
       <h3>Tools & Frameworks</h3>
-      <p>Showcase the tools and frameworks you use, with graphics.</p>
+      {tools.map((tool, index) => (
+        <ToolTile
+          key={index}
+          image={tool.image}
+          title={tool.title}
+          description={tool.description}
+          primary={tool.primary}
+          secondary={tool.secondary}
+        />
+      ))}
     </div>
   );
 }

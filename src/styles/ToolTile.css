@@ -1,0 +1,47 @@
+/* ToolTile.css */
+
+.tool-tile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-size: cover;
+    background-position: center;
+    width: 10vw;
+    height: 10vw;
+    margin: 1rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .tool-tile-content {
+    display: none; /* Hide content to fit the small size */
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+  }
+  
+  .tool-tile-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
+  .tool-tile-content p {
+    margin: 0.5rem 0;
+  }
+  
+  .tool-tile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .tool-tile-container {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  

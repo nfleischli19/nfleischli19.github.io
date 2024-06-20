@@ -1,0 +1,18 @@
+/* ProjectPage.css */
+.project-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .project-page img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+  
+  /* BlogPostPage.css */
+  .blog-post-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
