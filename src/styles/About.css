@@ -4,11 +4,17 @@
 
 .about {
   display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+}
+
+.about-container {
+  display: flex;
   justify-content: space-between; /* Space between text and image */
   align-items: flex-start;
   text-align: left;
-  background-color: white;
-  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
 .about-text {
@@ -20,7 +26,6 @@
 }
 
 .about-text h2 {
-  /* font-size: 2.5rem; */
   text-align: left;
   margin-bottom: 1.5rem;
   font-size: clamp(2rem, 2vw, 50px); /* Dynamically adjust font size */
@@ -30,7 +35,6 @@
   font-size: clamp(6px, 1vw, 14px); /* Dynamically adjust font size */
   line-height: 1.4;
   margin-bottom: 1.5rem;
-
 }
 
 .about-content a {
@@ -42,17 +46,22 @@
   text-decoration: underline;
 }
 
-.tools {
+.tools-section {
+  display: flex;
+  flex-direction: column;
   margin-top: 2rem;
+}
+
+.tools-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+  justify-content: flex-start; /* Align items to the start of the container */
 }
 
 .tools h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
-}
-
-.tools p {
-  line-height: 1.6;
 }
 
 .about-image {
@@ -87,7 +96,7 @@
 }
 
 @media (max-width: 768px) {
-  .about {
+  .about-container {
     flex-direction: column;
     align-items: center;
     padding-left: 0; /* Remove left padding for small screens */

@@ -2,14 +2,41 @@ import React from 'react';
 import '../styles/About.css';
 import ToolTile from './ToolTile';
 import pitching from '../images/pitching.png'; // Adjust the path accordingly
-import altEdit from '../images/altEdit.png'; // Example tool image, adjust path accordingly
+import designthink from '../images/designthink.png'; // Example tool image, adjust path accordingly
+import POVs from '../images/POVs.png'; // Example tool image, adjust path accordingly
+import HMW from   '../images/HMW.png'; // Example tool image, adjust path accordingly
+import AssumptionTest from '../images/AssumptionTest.png'; // Example tool image, adjust path accordingly
+import empathymap from '../images/empathymap.png'; // Example tool image, adjust path accordingly
 
 function About() {
   const tools = [
     {
-      image: altEdit,
-      title: 'AltEdit',
-      description: 'Accessible Screenshot tool for BLV users',
+      image: designthink,
+      title: 'Design Thinking',
+      primary: "white",
+      secondary: 'black', 
+    },
+    {
+      image: empathymap,
+      title: 'Empathy Maps',
+      primary: "#525659",
+      secondary: 'black', 
+    },
+    {
+      image: POVs,
+      title: 'POVs',
+      primary: "#FBF7FF",
+      secondary: 'black', 
+    },
+    {
+      image: HMW,
+      title: 'HMWs',
+      primary: "white",
+      secondary: 'black', 
+    },
+    {
+      image: AssumptionTest,
+      title: 'Assumption Evalutions',
       primary: "white",
       secondary: 'black', 
     },
@@ -18,13 +45,17 @@ function About() {
 
   return (
     <section className="about">
-      <div className="about-text">
-        <h2>About Me</h2>
-        <AboutContent />
-        <Tools tools={tools} />
+      <div className='about-container'>
+        <div className="about-text">
+          <h2>About Me</h2>
+          <AboutContent />
+        </div>
+        <div className="about-image">
+          <img src={pitching} alt="Your Name" />
+        </div>
       </div>
-      <div className="about-image">
-        <img src={pitching} alt="Your Name" />
+      <div className='tools-section'>
+        <Tools tools={tools} />
       </div>
     </section>
   );
@@ -59,16 +90,18 @@ function Tools({ tools }) {
   return (
     <div className="tools">
       <h3>Tools & Frameworks</h3>
-      {tools.map((tool, index) => (
-        <ToolTile
-          key={index}
-          image={tool.image}
-          title={tool.title}
-          description={tool.description}
-          primary={tool.primary}
-          secondary={tool.secondary}
-        />
-      ))}
+      <div className='tools-container'>
+        {tools.map((tool, index) => (
+          <ToolTile
+            key={index}
+            image={tool.image}
+            title={tool.title}
+            description={tool.description}
+            primary={tool.primary}
+            secondary={tool.secondary}
+          />
+        ))}
+      </div>
     </div>
   );
 }

@@ -6,26 +6,28 @@
     justify-content: flex-start;
     background-size: cover;
     background-position: center;
-    width: 10vw;
-    height: 10vw;
+    width: 15vw;
+    height: 15vw;
     margin: 1rem;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+    border: 1px solid rgb(153, 153, 153); /* Add a simple black border */
     font-family: 'Inter', sans-serif;
   }
   
   .tool-tile-content {
-    display: none; /* Hide content to fit the small size */
-    text-align: left;
-    background-color: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: .5rem;
+    background-color: #e6e6e6;
+    border-top: 1px solid rgb(153, 153, 153); ;
     color: black;
-    padding: 1rem;
   }
   
   .tool-tile-content h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.2rem;
+    font-size: calc(.5vw + .5vh + 0.5vmin);
   }
   
   .tool-tile-content p {
@@ -35,7 +37,7 @@
   .tool-tile-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
   
   @media (max-width: 768px) {

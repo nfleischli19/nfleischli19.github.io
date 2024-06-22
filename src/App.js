@@ -14,32 +14,32 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Routes>
-          <Route 
-            exact 
-            path="/" 
-            element={
-              <>
-                <Header />
-                <section id="intro">
-                  <Intro />
-                </section>
-                <section id="about">
-                  <About />
-                </section>
-                <section id="work">
-                  <Work />
-                </section>
-                <section id="blog">
-                  <Blog />
-                </section>
-                <Footer />
-              </>
-            } 
-          />
-          <Route path="/project/:id" element={<Project />} />
-          <Route path="/blog/:id" element={<BlogPost />} />
-        </Routes>
+          <Header />
+          <Routes>
+            <Route 
+              exact 
+              path="/" 
+              element={
+                <>
+                  <section id="intro">
+                    <Intro />
+                  </section>
+                  <section id="about">
+                    <About />
+                  </section>
+                  <section id="work">
+                    <Work />
+                  </section>
+                  <section id="blog">
+                    <Blog />
+                  </section>
+                  <Footer />
+                </>
+              } 
+            />
+            <Route path="/project/:id" element={<Project />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
+          </Routes>
       </div>
     </Router>
   );
