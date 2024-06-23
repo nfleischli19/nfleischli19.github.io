@@ -8,6 +8,7 @@ import Blog from './components/Blog';
 import Project from './components/Project';
 import BlogPost from './components/BlogPost';
 import Footer from './components/Footer';
+import EducareHealth from './components/projects/EducareHealth';
 import './styles/App.css';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
               } 
             />
             <Route path="/project/:id" element={<Project />} />
+            <Route path="/projects/educare-health" element={<EducareHealth />} />
             <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
       </div>

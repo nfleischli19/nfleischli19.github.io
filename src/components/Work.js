@@ -56,7 +56,7 @@ function Work() {
       image: townhall,
       title: 'TownHall',
       description: 'Social Media App for College Discourse',
-      type: 'Mobile APP',
+      type: 'MOBILE APP',
       primary: "white",
       secondary: 'black', 
     },

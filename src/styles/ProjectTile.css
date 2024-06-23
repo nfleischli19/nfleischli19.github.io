@@ -9,19 +9,33 @@
   align-items: stretch; /* Ensure tiles stretch to fill the container */
 }
 
+.project-tile-link {
+  text-decoration: none; /* Remove underline from the link */
+  width: 100%;
+  max-width: 400px; /* Ensure the tiles have a fixed size */
+  height: 100%;
+  max-height: 500px; /* Ensure the tiles have a fixed size */
+}
+
 .project-tile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-size: cover;
   background-position: center;
-  width: calc(25% - 1rem); /* Smaller width */
-  height: calc(25% - 1rem); /* Smaller height */
+  width: 100%;
+  height: 100%;
   margin: 0.5rem;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Inter', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
+}
+
+.project-tile:hover {
+  transform: scale(1.05); /* Scale up the tile slightly */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow to give a lift effect */
 }
 
 .tile-content {
@@ -29,9 +43,14 @@
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
   color: black;
   padding: 1.5rem;
-  border-radius: 0 0 12px 12px;
-  flex: 1; /* Allow content to take remaining space */
+  height: 5rem;
   font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Smaller dynamic font size */
+}
+
+.tile-content h5 {
+  margin: 0 0 0.25rem 0;
+  font-size: calc(0.5vw + 0.5vh + 0.25vmin); /* Dynamic font size for type */
+  color: #777;
 }
 
 .tile-content h3 {
@@ -60,6 +79,10 @@
   object-fit: contain; /* Ensure the image covers the entire area */
   object-position: center; /* Center the image within its container */
   border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
 }
 
 @media (max-width: 768px) {

@@ -10,8 +10,8 @@ import empathymap from '../images/empathymap.png'; // Example tool image, adjust
 import visual from '../images/visual.png'; // Example tool image, adjust path accordingly
 import sketches from '../images/Sketches.png'; // Example tool image, adjust path accordingly
 import userflows from '../images/userflows.png'; // Example tool image, adjust path accordingly
-
-
+import MedFi from '../images/MedFi.png'; // Example tool image, adjust path accordingly
+import groundedTheory from '../images/groundedTheory.png'; // Example tool image, adjust path accordingly
 
 function About() {
   const visualD = [
@@ -29,6 +29,12 @@ function About() {
       title: 'Empathy Maps',
       primary: "#525659",
       secondary: 'black', 
+    },
+    {
+      image: groundedTheory,
+      title: 'Grounded Theory Analysis',
+      primary: "white",
+      secondary: 'black',
     },
     {
       image: POVs,
@@ -66,6 +72,13 @@ function About() {
       primary: "white",
       secondary: 'black',
     },
+    {
+      image: MedFi,
+      title: 'Figma Medium Fidelity Prototypes',
+      primary: "white",
+      secondary: 'black',
+    },
+    
     // Add more tool objects here
   ];
 
