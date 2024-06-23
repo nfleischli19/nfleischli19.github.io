@@ -7,8 +7,16 @@ import POVs from '../images/POVs.png'; // Example tool image, adjust path accord
 import HMW from   '../images/HMW.png'; // Example tool image, adjust path accordingly
 import AssumptionTest from '../images/AssumptionTest.png'; // Example tool image, adjust path accordingly
 import empathymap from '../images/empathymap.png'; // Example tool image, adjust path accordingly
+import visual from '../images/visual.png'; // Example tool image, adjust path accordingly
+import sketches from '../images/Sketches.png'; // Example tool image, adjust path accordingly
+import userflows from '../images/userflows.png'; // Example tool image, adjust path accordingly
+
+
 
 function About() {
+  const visualD = [
+    
+  ];
   const tools = [
     {
       image: designthink,
@@ -40,6 +48,24 @@ function About() {
       primary: "white",
       secondary: 'black', 
     },
+    {
+      image: visual,
+      title: 'Mood Boards & Style Tiles',
+      primary: "white",
+      secondary: 'black',
+    },
+    {
+      image: sketches,
+      title: 'Rapid Sketches & Wireframes',
+      primary: "white",
+      secondary: 'black',
+    },
+    {
+      image: userflows,
+      title: 'User Flows',
+      primary: "white",
+      secondary: 'black',
+    },
     // Add more tool objects here
   ];
 
@@ -55,6 +81,7 @@ function About() {
         </div>
       </div>
       <div className='tools-section'>
+        <h2>Tools & Frameworks</h2>
         <Tools tools={tools} />
       </div>
     </section>
@@ -89,7 +116,6 @@ function AboutContent() {
 function Tools({ tools }) {
   return (
     <div className="tools">
-      <h3>Tools & Frameworks</h3>
       <div className='tools-container'>
         {tools.map((tool, index) => (
           <ToolTile
