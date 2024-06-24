@@ -34,10 +34,10 @@ function Work() {
       secondary: 'white', 
     },
     {
-      id: 'nighthawks',
+      id: 'ignight',
       image: nighthawks,
-      title: 'nighthawks',
-      description: 'Workout App for Beginners',
+      title: 'IGNITE',
+      description: 'Behavior Change Workout App for College Students',
       type: 'MOBILE APP',
       primary: "#E5E4DC",
       secondary: 'black', 

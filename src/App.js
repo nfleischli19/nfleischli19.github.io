@@ -9,6 +9,8 @@ import Project from './components/Project';
 import BlogPost from './components/BlogPost';
 import Footer from './components/Footer';
 import EducareHealth from './components/projects/EducareHealth';
+import Root from './components/projects/Root';
+import Ignite from './components/projects/Ignite';
 import './styles/App.css';
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
             />
             <Route path="/project/:id" element={<Project />} />
             <Route path="/projects/educare-health" element={<EducareHealth />} />
+            <Route path="/projects/root" element={<Root />} />
+            <Route path="/projects/ignite" element={<Ignite />} />
             <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
       </div>
