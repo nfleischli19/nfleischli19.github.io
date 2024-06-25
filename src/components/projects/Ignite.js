@@ -25,7 +25,14 @@ function Ignite() {
         <p>Full information about this project can be found at: <a href="https://docs.google.com/document/d/1Q23lroOZUaOWqTN_XggPt-QwcqqmrMLrXvsI4zxI8No/edit?usp=sharing" className="web-link">[report]</a></p>
         <p> <a href="https://www.figma.com/proto/ISibkb704IXKO1jAEXJIn7/Clickable-Prototype?node-id=188-3158&t=9rtJUrMvX55zekh8-1&scaling=scale-down&content-scaling=fixed&page-id=188%3A1110&starting-point-node-id=233%3A3263&show-proto-sidebar=1" className="web-link">[Prototype]</a></p>
         <p> <a href="https://www.figma.com/design/ISibkb704IXKO1jAEXJIn7/Clickable-Prototype?node-id=188-1110&t=dMfRzbCDpRjzEZF6-1" className="web-link">[Figma]</a></p>
-      </section>
+        <div className="iframe-container">
+            <iframe 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FISibkb704IXKO1jAEXJIn7%2FClickable-Prototype%3Fnode-id%3D188-3158%26t%3D9rtJUrMvX55zekh8-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D188%253A1110%26starting-point-node-id%3D233%253A3263%26show-proto-sidebar%3D1" 
+                allowfullscreen
+                className='ignite-embed'>
+            </iframe>
+        </div>
+     </section>
 
       <section className="section-problem">
         <h2>The Problem</h2>

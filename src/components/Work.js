@@ -43,7 +43,7 @@ function Work() {
       secondary: 'black', 
     },
     {
-      id: 'carta',
+      id: 'cartav2',
       image: carta,
       title: 'Carta V2',
       description: 'Redesign of Carta.com',
@@ -68,9 +68,10 @@ function Work() {
       type: 'WEB APP',
       primary: "white",
       secondary: 'black', 
+      url: "https://cs448b-finalproject.vercel.app/",
     },
     {
-      id: 'zone',
+      id: 'automated-zone',
       image: zone,
       title: 'Automated Zone Fairness',
       description: 'Evaluating Fairness in Automated Baseball Strike Zones',
@@ -113,6 +114,7 @@ function Work() {
             type={project.type}
             primary={project.primary}
             secondary={project.secondary}
+            url={project.url}
           />
         ))}
       </div>

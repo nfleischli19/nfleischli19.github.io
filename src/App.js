@@ -11,6 +11,10 @@ import Footer from './components/Footer';
 import EducareHealth from './components/projects/EducareHealth';
 import Root from './components/projects/Root';
 import Ignite from './components/projects/Ignite';
+import CartaV2 from './components/projects/CartaV2';
+import TownHall from './components/projects/TownHall';  
+import AutomatedZone from './components/projects/AutomatedZone';
+import Discord from './components/projects/Discord';
 import './styles/App.css';
 
 function App() {
@@ -40,10 +44,14 @@ function App() {
                 </>
               } 
             />
-            <Route path="/project/:id" element={<Project />} />
+            {/* <Route path="/project/:id" element={<Project />} /> */}
             <Route path="/projects/educare-health" element={<EducareHealth />} />
             <Route path="/projects/root" element={<Root />} />
             <Route path="/projects/ignite" element={<Ignite />} />
+            <Route path="/projects/cartav2" element={<CartaV2 />} />
+            <Route path="/projects/townhall" element={<TownHall />} />
+            <Route path="/projects/automated-zone" element={<AutomatedZone />} />
+            <Route path="/projects/discord" element={<Discord />} />
             <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
       </div>
