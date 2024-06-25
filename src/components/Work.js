@@ -34,7 +34,7 @@ function Work() {
       secondary: 'white', 
     },
     {
-      id: 'ignight',
+      id: 'ignite',
       image: nighthawks,
       title: 'IGNITE',
       description: 'Behavior Change Workout App for College Students',

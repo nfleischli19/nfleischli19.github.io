@@ -84,6 +84,7 @@ body {
   align-items: center; /* Center vertically */
   margin-top: 1rem;
   margin-bottom: 2rem;
+  border-radius: 8px;
 }
 
 .video-container iframe {
