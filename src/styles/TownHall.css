@@ -75,7 +75,12 @@ body {
     border-radius: 8px;
     margin-bottom: 1rem;
   }
-
+.data-image {
+    width: 100%;
+    height: auto;
+    /* border-radius: 8px; */
+    margin-bottom: 1rem;
+}
 .section ul {
   list-style-type: disc;
   padding-left: 1rem;

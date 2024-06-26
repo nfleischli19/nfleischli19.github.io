@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../../styles/CartaV2.css'; // Specific CSS file for the project
+import logo from '../../images/logo/carta_logo.png'; // Logo image
 
 function CartaV2() {
   useEffect(() => {
@@ -9,13 +10,12 @@ function CartaV2() {
   return (
     <div className="carta-page">
       <div className="header-section">
-        <h1>Carta V2</h1>
-        <p>AI Course Elective Suggestor Page Product Recommendations</p>
       </div>
 
       <section className="section-overview">
-        <h2>Introduction</h2>
-        <p>Carta V2 is a new feature design for Carta.com, a course catalog developed by Stanford University students. The feature aims to incorporate AI-driven course recommendations via a new home explore screen. This project involves preliminary design work for the new feature and identifies necessary risk mitigations for AI implementation. The goal is to enhance the user experience by making elective course selection more intuitive and personalized, helping students discover impactful and unexpected classes that enrich their academic journey. Carta V2 was created in collaboration with Maria Wang.</p>
+        <img src={logo} alt='Carta Logo' className='project-logo' />
+        <h2>AI Course Elective Suggestor Page Product Recommendations</h2>
+        <p><strong>Carta V2</strong> is a new feature design for Carta.com, a course catalog developed by Stanford University students. The feature aims to incorporate AI-driven course recommendations via a new home explore screen. This project involves preliminary design work for the new feature and identifies necessary risk mitigations for AI implementation. The goal is to enhance the user experience by making elective course selection more intuitive and personalized, helping students discover impactful and unexpected classes that enrich their academic journey. Carta V2 was created in collaboration with Maria Wang.</p>
       </section>
 
       <section className="section-links">
@@ -148,8 +148,15 @@ function CartaV2() {
         </ul>
       </section>
 
-      <section className="section-comparators">
+      {/* <section className="section-comparators">
         <h2>Comparators / Product Inspiration</h2>
+        <p>Netflix recommendations</p>
+        <p>Dall-e recommendations</p>
+        <p>Spotify recommendations</p>
+        <p>Youtube category selectors</p>
+        <p>Oncourse user interface</p>
+        <p>HeyMarvin dashboard</p>
+        <p>Reclaim.ai dashboard and explanation of functionality</p>
         <ul>
           <li>Netflix recommendations</li>
           <li>Dall-e recommendations</li>
@@ -159,7 +166,7 @@ function CartaV2() {
           <li>HeyMarvin dashboard</li>
           <li>Reclaim.ai dashboard and explanation of functionality</li>
         </ul>
-      </section>
+      </section> */}
 
       <section className="section-issues">
         <h2>Open Issues / Questions</h2>

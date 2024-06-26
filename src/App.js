@@ -5,7 +5,7 @@ import Intro from './components/Intro';
 import About from './components/About';
 import Work from './components/Work';
 import Blog from './components/Blog';
-import Project from './components/Project';
+// import Project from './components/Project';
 import BlogPost from './components/BlogPost';
 import Footer from './components/Footer';
 import EducareHealth from './components/projects/EducareHealth';
@@ -15,6 +15,7 @@ import CartaV2 from './components/projects/CartaV2';
 import TownHall from './components/projects/TownHall';  
 import AutomatedZone from './components/projects/AutomatedZone';
 import Discord from './components/projects/Discord';
+import AltEdit from './components/projects/AltEdit';
 import './styles/App.css';
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
             <Route path="/projects/townhall" element={<TownHall />} />
             <Route path="/projects/automated-zone" element={<AutomatedZone />} />
             <Route path="/projects/discord" element={<Discord />} />
+            <Route path="/projects/altedit" element={<AltEdit />} />
             <Route path="/blog/:id" element={<BlogPost />} />
           </Routes>
       </div>

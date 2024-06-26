@@ -6,7 +6,7 @@ import empathymap from '../../images/empathymap.png'; // Additional images for t
 import POVs from '../../images/POVs.png'; // Additional images for the project
 import process from '../../images/process.png'; // Additional images for the project
 import educare_lofi from '../../images/educare_lofi.png'; // Additional images for the project
-import educare_medfi from '../../images/educare_medfi.png'; // Additional images for the project
+// import educare_medfi from '../../images/educare_medfi.png'; // Additional images for the project
 
 
 function EducareHealth() {
@@ -24,8 +24,8 @@ function EducareHealth() {
 
         <h1>Healthcare Education App for Young Adults</h1>
         <section className="section-overview">
-          <h2>Project Overview</h2>
-          <p>EduCare is a platform designed to engage young adults who are unfamiliar with the healthcare system by offering a variety of learning opportunities including daily factoids, scavenger hunts, quizzes, and direct messaging with friends. This project was designed and built in collaboration with Brenden Koo (Lead Designer).</p>
+          {/* <h2>Project Overview</h2> */}
+          <p><strong>EduCare</strong> is a platform designed to engage young adults who are unfamiliar with the healthcare system by offering a variety of learning opportunities including daily factoids, scavenger hunts, quizzes, and direct messaging with friends. This project was designed and built in collaboration with Brenden Koo (Lead Designer).</p>
           <p>Full information about this project can be found at <a href="https://hci.stanford.edu/courses/cs147/2022/au/projects/EquitableHealthcare/EduCare/">[website]</a></p>
           <p>Full report <a href="https://hci.stanford.edu/courses/cs147/2022/au/projects/EquitableHealthcare/EduCare/assets/files/final.pdf">[link]</a></p>
           <div className="video-container">
@@ -61,7 +61,11 @@ function EducareHealth() {
           <p><strong>Low-Fidelity Prototypes:</strong> We used rapid sketching to create paper prototypes of our solutions and tested them with users to identify gaps and new needs. These low-fidelity prototypes allowed us to quickly iterate on our ideas based on user feedback. For example, we tested different ways to present daily healthcare factoids and adjusted the design based on user preferences.</p>
           <img src={educare_lofi} alt='Low Fidelity Prototype' className="empathy-map" />
           <p><strong>Medium-Fidelity Prototypes:</strong> We developed a clickable prototype using Figma, incorporating feedback from our low-fidelity tests. This medium-fidelity prototype underwent several rounds of peer feedback and heuristic evaluations to refine the design and ensure usability. For example, we adjusted the navigation and interface elements to make them more intuitive.</p>
-          <img src={educare_medfi} alt='Medium Fidelity Prototype' className="empathy-map" />
+          {/* <img src={educare_medfi} alt='Medium Fidelity Prototype' className="empathy-map" /> */}
+          <iframe 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FZAu5jtEG3pa7OOcY8gEIbR%2FEduCare-Med-Fi%3Fnode-id%3D0-1%26t%3D0rmTgb59A0SdCOfu-1" 
+            allowfullscreen>
+          </iframe>
           <p><strong>High-Fidelity Prototype:</strong> The final prototype was implemented using React Native on Expo Go. This high-fidelity version included all the features and design elements from our medium-fidelity prototype, offering a realistic experience for user testing. For example, users could now interact with the full range of EduCare’s functionalities, including daily factoids, quizzes, and scavenger hunts.</p>
 
           <h3>Test</h3>

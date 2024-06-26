@@ -12,25 +12,18 @@ function TownHall() {
 
   return (
     <div className="project-page">
-      <div className="header-section">
-        <h1>TownHall</h1>
-        <p>Community discourse application for college students. Built in collaboration with John Clark, Yishu Chen, and Ben Felter.</p>
-        <p></p>
-      </div>
-
-      <section className="section-links">
-        <p>Link to our Github repository for this project: <a href="https://github.com/jacktheclark/TownHallCS278/tree/final">GitHub Repository</a></p>
-        <p>Scan with Expo Go Mobile App</p>
-        <img src={townhall_expo} alt="TownHall Expo" className='expo-image'/>
-      </section>
-
       <section className="section-overview">
-        <h2>Introduction</h2>
-        <p>Town Hall is a community discourse application aimed at engaging college students with hot-button topics that echo across campuses. Thus far, no matter how much university administrations attempt to provide safe spaces for students to share their views, their efforts are fruitless due to fear of being ostracized. As a result, students need an outlet carefully designed for this kind of discourse.</p>
+        <h1>TownHall</h1>
+        <h2>Community discourse application for college students</h2>
+        <p>Built in collaboration with John Clark, Yishu Chen, and Ben Felter</p>
+        <p><strong>Town Hall </strong>is a community discourse application aimed at engaging college students with hot-button topics that echo across campuses. Thus far, no matter how much university administrations attempt to provide safe spaces for students to share their views, their efforts are fruitless due to fear of being ostracized. As a result, students need an outlet carefully designed for this kind of discourse.</p>
         <p>We set out to design an application for those civically and socially minded college students to safely engage in discussions on current events. Through our ideation, platform safety became the most significant feature of our application. We tackled this by establishing sophisticated and descriptive norms through playful flows but also the confidence provided by a pseudonym. Nothing a user says in the app can be tied back to them.</p>
         <p>Of course, anonymity lowers inhibitions, which could be a negative if it led to trolls or flaming, so we also implemented a very clear and accessible report button that is on each comment directly next to the author’s pseudonym. In parallel to community flagging we also have an in-person moderation team that watches for any potentially harmful comments. This multi-pronged approach proved effective for the beta-launch of TownHall, and we acknowledge the need for a more robust content moderation classifier as the platform scales.</p>
         <p>In all, we created an app with little friction between a user and participation in engaging debate. Each day, all one must do to engage in provoking discussion is simply choose a position on a scale of “takes” on the daily issue and then type a response. From there, users can interact with other users through upvoting and downvoting comments and sending replies in thread.</p>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/SxRnIbL2jGI?si=mg8c-ZkADXi_kgYD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p><a href="https://github.com/jacktheclark/TownHallCS278/tree/final">[GitHub Repository]</a></p>
+        <p>Scan with Expo Go Mobile App</p>
+        <img src={townhall_expo} alt="TownHall Expo" className='expo-image'/>
       </section>
 
       <section className="section-design">

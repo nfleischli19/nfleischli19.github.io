@@ -32,7 +32,7 @@ function About() {
     },
     {
       image: groundedTheory,
-      title: 'Grounded Theory Analysis',
+      title: 'Grounded Theory',
       primary: "white",
       secondary: 'black',
     },
@@ -62,7 +62,7 @@ function About() {
     },
     {
       image: sketches,
-      title: 'Rapid Sketches & Wireframes',
+      title: 'Rapid Sketches',
       primary: "white",
       secondary: 'black',
     },
@@ -74,7 +74,7 @@ function About() {
     },
     {
       image: MedFi,
-      title: 'Figma Medium Fidelity Prototypes',
+      title: 'Figma Prototypes',
       primary: "white",
       secondary: 'black',
     },

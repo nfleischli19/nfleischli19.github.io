@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.altedit-page {
+  max-width: 60%;
+  margin: 2rem auto;
+  background-color: #f5f5f5;
+  text-align: left;
+  padding: 1rem;
+}
+
+.header-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: left; /* Ensure overall section has left-aligned text */
+}
+
+.altedit-logo {
+    width: 20%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.header-section h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  color: #333; /* Ensure consistent color */
+  font-family: 'Inter', sans-serif; /* Ensure consistent font */
+}
+
+.header-section p {
+  font-size: 1.1rem;
+  text-align: left;
+  color: #333;
+  width: 100%;
+  line-height: 1.3; /* Ensure consistent line-height */
+  font-family: 'Inter', sans-serif; /* Ensure consistent font */
+}
+
+.section-overview, .section-solution, .section-design-process, .section-user-study, .section-video, .section-conclusions, .section-revisions {
+  margin-bottom: 1rem;
+}
+
+.section h2 {
+  font-size: 1.9rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.section p, .section ul {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+}
+
+th {
+  background-color: #f5f5f5;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

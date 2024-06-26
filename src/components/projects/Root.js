@@ -11,15 +11,15 @@ function Root() {
 
   return (
     <div className="project-page">
-      <div className="header-section">
-        {/* <h1>root</h1> */}
-        <img src={logo} alt='root Logo' className="project-logo" />
-        <h1>Community Engagement App</h1>
-      </div>
 
       <section className="section-overview">
-        <h2>Project Overview</h2>
-        <p><strong>Introduction:</strong> root is a community-focused application that aims to address the challenges of engaging new community members and motivating individuals to contribute actively to their communities. This project was designed and built in collaboration with John Clark, Tristan Sinclair, Elysia Smyers, and Lyndsea Warkenthien.</p>
+        <div className="header-section">
+          {/* <h1>root</h1> */}
+        </div>
+          <img src={logo} alt='root Logo' className="project-logo" />
+          <h1>Community Engagement App</h1>
+        {/* <h2>Project Overview</h2> */}
+        <p><strong>root</strong> is a community-focused application that aims to address the challenges of engaging new community members and motivating individuals to contribute actively to their communities. This project was designed and built in collaboration with John Clark, Tristan Sinclair, Elysia Smyers, and Lyndsea Warkenthien.</p>
         <p>Full information about this project can be found at: <a href="https://web.stanford.edu/class/cs194h/projects/root/" className="web-link">[website]</a></p>
         <p>Full report <a href="https://docs.google.com/document/d/1m8wnW224DxzvKszgWJKmvA2DepbHWhJo_ja6bddmwVk/edit?usp=sharing" className="report-link">[link]</a></p>
 

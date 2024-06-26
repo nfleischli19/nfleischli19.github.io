@@ -15,12 +15,9 @@ function Ignite() {
 
   return (
     <div className="project-page">
-      <div className="header-section">
+      <section className="section-overview">
         <img src={logo} alt='Ignite Logo' className="project-logo" />
         <h1>Behavior Change App for Exercise</h1>
-      </div>
-
-      <section className="section-overview">
         <p><strong>Ignite</strong> is a social exercise application designed to help users establish and maintain sustainable workout routines through team challenges and social accountability. This project emerged from CS247B - Design for Behavior Change, recognizing that many individuals struggle with staying motivated and consistent in their fitness efforts. Ignite was completed in collaboration with John Clark, Yishu Chen, and Sophia Ramsey.</p>
         <p>Full information about this project can be found at: <a href="https://docs.google.com/document/d/1Q23lroOZUaOWqTN_XggPt-QwcqqmrMLrXvsI4zxI8No/edit?usp=sharing" className="web-link">[report]</a></p>
         <p> <a href="https://www.figma.com/proto/ISibkb704IXKO1jAEXJIn7/Clickable-Prototype?node-id=188-3158&t=9rtJUrMvX55zekh8-1&scaling=scale-down&content-scaling=fixed&page-id=188%3A1110&starting-point-node-id=233%3A3263&show-proto-sidebar=1" className="web-link">[Prototype]</a></p>
@@ -85,7 +82,7 @@ function Ignite() {
       </section>
 
       <section className="section-theory">
-        <h2>Grounded Theory</h2>
+        <h3>Grounded Theory</h3>
         <p>A grounded theory analysis was conducted after the study’s completion led to the following theories:</p>
         <ul>
           <li><strong>Philosophical Foundation:</strong> The core of sustained workout routines lies in a personal philosophy and intrinsic motivation. When individuals exercise for meaningful, internally rewarding reasons rather than external validation, they are more likely to maintain consistency. This deep-seated motivation is crucial for long-term adherence.</li>
@@ -99,7 +96,7 @@ function Ignite() {
       </section>
 
       <section className="section-systems">
-        <h2>Systems Thinking</h2>
+        <h3>Systems Thinking</h3>
         <img src={ignite_circle} alt="Connection Circle" className="system-image" />
         <p>There are 2 loops that we can see in the connection circle:</p>
         <ul>

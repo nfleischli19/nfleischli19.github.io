@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../../styles/AutomatedZone.css'; // Specific CSS file for the project
 import figure1 from '../../images/zone_figure1.png'; // Image file for the project
+import zone2 from '../../images/zone2.png'; // Image file for the project
 
 function AutomatedZone() {
   useEffect(() => {
@@ -9,14 +10,10 @@ function AutomatedZone() {
 
   return (
     <div className="automatedzone-page">
-      <div className="header-section">
+      <section className="section-overview">
         <h1>Examining the Potential Automation of Strike Calling in Major League Baseball</h1>
         <p>Nate Fleischli, Riley Pittman, Dan Musachio</p>
-        <p>Department of Computer Science, Stanford University</p>
-        <p>Email: nathan23@stanford.edu, rileywp@stanford.edu, dmusachi@stanford.edu</p>
-      </div>
-
-      <section className="section-overview">
+        <img src={zone2} alt="Automated Zone" className='zone2' />
         <h2>Introduction and Motivation</h2>
         <p>The world of professional sports is shifting towards an automated decision-making process instead of a human-based decision-making process. In other words, referees are slowly being replaced by computers. Major League Baseball (MLB) is seriously considering shifting from human umpires (referees) to computer umpires. The umpire is tasked with deciding whether a pitch thrown by the pitcher is considered a strike or a ball. There exists a “strike-zone” relative to the dimensions of each batter and if the ball enters this theoretical zone, then the umpire will deem the pitch a strike. If the ball fails to enter the zone, the umpire calls a ball. So while it seems as if replacing humans with computers in order to determine if a pitch is a strike or a ball sounds rather straightforward, it is anything but.</p>
         <p>The sport of soccer had a fairly easy time implementing a similar feature: “Goal Line Technology”. With dozens of video cameras, a computer could far more accurately determine if a ball had “crossed the line” than even the best referees. However, the situation with baseball is different. With soccer, everyone (players, referees, spectators) can agree that if the entirety of the ball crosses the line, it is a goal. But with baseball, while the definition of a strike is “if the pitch enters the strike-zone”, there is a problem: there is no exact, widely agreed upon definition of what the “strike-zone” is. Different umpires in today’s MLB have different views on the dimensions of the strike-zone.</p>
@@ -33,7 +30,7 @@ function AutomatedZone() {
           <li><strong>y:</strong> The vertical distance in inches from the ground of the baseball when it crosses the plate</li>
         </ul>
         <div className="image-container">
-          <img src={figure1} alt="Strike Zone" />
+          <img src={figure1} alt="Strike Zone" className='figure1' />
         </div>
         <p>In the above figure, since the batter is 72 inches, and the ball crosses home plate at 54 inches above the ground and 5.2 inches to the left of the center of the plate, the above pitch would be represented as (h, x, y) = (72, 5.2, 54).</p>
         <p>We elected to take the absolute value of x because umpires would agree in theory, that whether the pitch is to the right or to the left of the plate should not be a factor in determining whether the pitch is a strike.</p>

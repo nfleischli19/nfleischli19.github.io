@@ -18,7 +18,7 @@ function Work() {
     {
       id: 'educare-health',
       image: educare,
-      title: 'Educare Health',
+      title: 'EduCare Health',
       description: 'Healthcare Education App for Young Adults', 
       type: 'MOBILE APP',
       primary: 'white',
@@ -92,7 +92,7 @@ function Work() {
       id: 'altEdit',
       image: altEdit,
       title: 'AltEdit',
-      description: 'Accessible Screenshot tool for BLV users',
+      description: 'Accessible Screenshot Redaction Tool for Blind and Low Vision Users',
       type: 'WEB APP',
       primary: "white",
       secondary: 'black', 
