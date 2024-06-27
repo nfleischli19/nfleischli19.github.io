@@ -19,16 +19,17 @@ function Blog() {
 
   return (
     <section className="blog-section">
-      <h2 className="blog-header">Blog</h2>
+      <h1 className="blog-header">Blog</h1>
+      <h2>Coming Soon!</h2>
       <div className="blog-grid">
-        {blogPosts.map((post, index) => (
+        {/* {blogPosts.map((post, index) => (
           <BlogTile
             key={index}
             image={post.image}
             title={post.title}
             description={post.description}
           />
-        ))}
+        ))} */}
       </div>
     </section>
   );

@@ -5,9 +5,9 @@ import '../styles/Work.css';
 
 import educare from '../images/educare.png';
 import root from '../images/root.png';
-import nighthawks from '../images/nighthawks2.png';
-import carta from '../images/carta2.png';
-import townhall from '../images/townhall.png';
+import nighthawks from '../images/nighthawks4.png';
+import carta from '../images/carta3.png';
+import townhall from '../images/townhall4.png';
 import airways from '../images/airways.png';
 import zone from '../images/zone.png';
 import discord from '../images/discord2.png';   
@@ -41,6 +41,7 @@ function Work() {
       type: 'MOBILE APP',
       primary: "#E5E4DC",
       secondary: 'black', 
+      special: 'special-tile', 
     },
     {
       id: 'cartav2',
@@ -48,8 +49,10 @@ function Work() {
       title: 'Carta V2',
       description: 'Redesign of Carta.com',
       type: 'WEB APP',
-      primary: "black",
+      primary: "#9BB8DD",
       secondary: 'white', 
+      special: 'special-tile2', 
+
     },
     {
       id: 'townhall',
@@ -115,6 +118,7 @@ function Work() {
             primary={project.primary}
             secondary={project.secondary}
             url={project.url}
+            className={project.special ? project.special : ''}
           />
         ))}
       </div>

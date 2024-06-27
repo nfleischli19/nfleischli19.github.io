@@ -12,18 +12,20 @@ import sketches from '../images/Sketches.png'; // Example tool image, adjust pat
 import userflows from '../images/userflows.png'; // Example tool image, adjust path accordingly
 import MedFi from '../images/MedFi.png'; // Example tool image, adjust path accordingly
 import groundedTheory from '../images/groundedTheory.png'; // Example tool image, adjust path accordingly
+// import Hexagon from './Hexagon';
+import design_thinking from '../images/design_thinking.png';
 
 function About() {
   const visualD = [
     
   ];
   const tools = [
-    {
-      image: designthink,
-      title: 'Design Thinking',
-      primary: "white",
-      secondary: 'black', 
-    },
+    // {
+    //   image: designthink,
+    //   title: 'Design Thinking',
+    //   primary: "white",
+    //   secondary: 'black', 
+    // },
     {
       image: empathymap,
       title: 'Empathy Maps',
@@ -94,7 +96,9 @@ function About() {
         </div>
       </div>
       <div className='tools-section'>
-        <h2>Tools & Frameworks</h2>
+        <h2>Design Thinking Tools and Frameworks</h2>
+        {/* <Hexagon /> */}
+        <img src={design_thinking} alt="Design Thinking" />
         <Tools tools={tools} />
       </div>
     </section>
@@ -111,7 +115,7 @@ function AboutContent() {
         Academically, I pursued my passion for computer science, earning both a Bachelor's and Master's degree by June 2024. My undergraduate studies focused on Artificial Intelligence, while my graduate concentration was in Human-Computer Interaction (HCI). HCI is an interdisciplinary field that combines computer science, design, and psychology to critically evaluate technical systems and understand user interactions. We explore questions like, "What does it mean for technology to be human-centered?", "What is the appropriate UI vocabulary for users' mental models?", and "What are the shortcomings of these designs in specific contexts?" I've fallen in love with this work—utilizing design frameworks from the Stanford d.school for needfinding and rapid prototyping, understanding the psychological principles behind human behavior, and developing solutions from end to end.
       </p>
       <p>
-        Inspired by HCI trailblazers like Vannevar Bush (Memex), Ivan Sutherland (Sketchpad), Doug Engelbart (chorded keyboard, mouse, hypertext), Alan Kay (Dynabook, Xerox Star), Allen Newell (GOMS models), Don Norman (The Design of Everyday Things), Ben Shneiderman (direct manipulation), and Pattie Maes (autonomous agents), I am excited to contribute to the fourth wave of HCI. As ubiquitous computing becomes a reality, I believe we can leverage longitudinal data and scientific advancements to address long-standing issues in health, education, and the environment. The real challenge ahead is using this data for effective human-behavioral interventions — helping individuals become the best versions of themselves.
+        Inspired by HCI trailblazers like Vannevar Bush (Memex), Ivan Sutherland (Sketchpad), Doug Engelbart (chorded keyboard, mouse, hypertext), Alan Kay (Dynabook, Xerox Star), Allen Newell (GOMS models), Don Norman (The Design of Everyday Things), Ben Shneiderman (direct manipulation), and Pattie Maes (autonomous agents), I am excited to contribute to the fourth wave of HCI. As ubiquitous computing becomes a reality, I believe we can leverage longitudinal data to address long-standing issues in health, education, and the environment. The real challenge ahead is utilizing data for effective human-behavioral interventions — helping individuals become the best versions of themselves.
       </p>
       <p>
         I am deeply thankful to the Stanford HCI department, particularly Professor James Landay, Professor Michael Bernstein, Professor Maneesh Agrawala, Professor Julie Stanford, and PhD Joon Park, for their incredible mentorship throughout my Master's program. I look forward to collaborating with them again in the future.

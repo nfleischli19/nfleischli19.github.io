@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/ProjectTile.css';
 
-function ProjectTile({ id, image, title, description, type, primary, secondary, url }) {
+function ProjectTile({ id, image, title, description, type, primary, secondary, url, className }) {
+  const tileClassName = `project-tile ${className ? className : ''}`;
+
   const content = (
-    <div className="project-tile" style={{ backgroundColor: primary }}>
+    <div className={tileClassName} style={{ backgroundColor: primary }}>
       <div className="tile-content" style={{ backgroundColor: primary, color: secondary }}>
         <h5>{type}</h5>
         <h3>{title}</h3>

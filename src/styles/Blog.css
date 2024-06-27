@@ -1,8 +1,15 @@
 /* Blog.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
 
 .blog-section {
+    font-family: 'Inter', sans-serif;flex-direction: column;
     padding: 2rem;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
   }
   
   .blog-header {
@@ -10,6 +17,18 @@
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #333;
+  }
+  .blog-section h1 {
+    text-align: center;
+    font-size: clamp(2rem, 2.5vw, 3rem);
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  .blog-section h2 {
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 2rem);
+    margin-bottom: 2rem;
+    color: #636363;
   }
   
   .blog-grid {

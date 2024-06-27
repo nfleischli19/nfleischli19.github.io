@@ -1,0 +1,131 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hexagon-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust as necessary */
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .hexagon {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    background-color: #ccc;
+    clip-path: polygon(25% 6.7%, 75% 6.7%, 100% 50%, 75% 93.3%, 25% 93.3%, 0% 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid black; /* Add black border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+    overflow: visible; /* Ensure overflow is visible for border and shadow */
+  }
+  
+  .hexagon::after {
+    content: "";
+    position: absolute;
+    top: -5px; /* Adjust to match border width */
+    left: -5px; /* Adjust to match border width */
+    width: calc(100% + 10px); /* Adjust to match border width */
+    height: calc(100% + 10px); /* Adjust to match border width */
+    background-color: transparent;
+    border: 2px solid black; /* Add black border */
+    clip-path: inherit; /* Apply the same polygon shape */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add box shadow */
+  }
+
+  .hexagon:nth-child(1) { /* Empathize */
+    top: 60px;
+    left: calc(50% - 353px);
+  }
+  
+  .hexagon:nth-child(2) { /* Define */
+    top: 145px;
+    left: calc(50% - 219px);
+  }
+  
+  .hexagon:nth-child(3) { /* Ideate */
+    top: 60px;
+    left: calc(50% - 85px);
+  }
+  
+  .hexagon:nth-child(4) { /* Prototype */
+    top: 145px;
+    left: calc(50% + 49px);
+  }
+  
+  .hexagon:nth-child(5) { /* Test */
+    top: 230px;
+    left: calc(50% + 183px);
+  }
+  
+  .hexagon-text {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    pointer-events: none;
+  }
+  
+  .hexagon-content {
+    position: absolute;
+    top: 0;
+    left: 170px; /* Adjust as necessary */
+    width: 160px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    z-index: 10; /* Ensure the content is above other elements */
+  }
+  
+  .hexagon-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hexagon-content li {
+    margin-bottom: 5px;
+    color: #000;
+  }
+  
+  .hexagon:hover .hexagon-content {
+    display: flex;
+  }
+  
+  #empathize {
+    background-color: #4c9ed9;
+  }
+  
+  #define {
+    background-color: #4caf50;
+  }
+  
+  #ideate {
+    background-color: #ff9800;
+  }
+  
+  #prototype {
+    background-color: #ff5722;
+  }
+  
+  #test {
+    background-color: #f44336;
+  }
+  

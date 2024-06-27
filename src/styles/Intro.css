@@ -9,8 +9,8 @@
     justify-content: center; /* Align items to the left */
     align-items: left; /* Center items vertically */
     text-align: left; /* Align text to the left */
-    height: 90vh; /* Full viewport height */
-
+    height: 85vh; /* Full viewport height */
+    /* width: 100%; */
 
     background-image: url('../images/intro.png');
     background-size: cover; /* Cover the entire section */
@@ -19,19 +19,31 @@
     color: black; /* Ensure text is readable */
     padding-left: 4vw; /* Add padding to the left side */
   }
+  .intro-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Align items to the left */
+    align-items: left; /* Center items vertically */
+    text-align: left; /* Align text to the left */
+    height: 90vh; /* Full viewport height */
+    width: 50%;
+    /* background-color: blue; */
+    padding: 2rem; /* Add padding to the content */
+  }
 
   .name img {
     height: auto; /* Adjust the height as needed */
-    width: auto; /* Adjust the width as needed */
+    width: 100%; /* Adjust the width as needed */
     max-width: 30rem;
     margin-bottom: 2vh; /* Margin below the logo */
+
   }
   
   .intro-text {
-    max-width: 30vw; /* Restrict the width of the text container */
+    max-width: 80%; /* Restrict the width of the text container */
     text-align: left;
     font-family: 'Inter', sans-serif;
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 2vw, 2rem); /* Responsive font size */
     /* background-color: white; */
     margin-left: 4vw;
   }

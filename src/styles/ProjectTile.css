@@ -38,6 +38,28 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance the shadow to give a lift effect */
 }
 
+.special-tile {
+  background: linear-gradient(to bottom, #dad9cf, #ffffff); /* Change colors as needed */
+  /* background-blend-mode: overlay; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.special-tile:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.special-tile2 {
+  background: linear-gradient(to bottom, #739bcc, #ffffff); /* Change colors as needed */
+  /* background-blend-mode: overlay; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow */
+  transition: box-shadow 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.special-tile2:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
 .tile-content {
   text-align: left;
   background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
