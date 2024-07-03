@@ -13,10 +13,11 @@ function Header() {
       </div>
       <nav className="nav">
         <ul>
-          <li><a href="#intro">Home</a></li>
+          {/* <li><a href="#intro">Home</a></li> */}
           <li><a href="#about">About</a></li>
+          <li><a href="#frameworks">Frameworks</a></li>
           <li><a href="#work">Work</a></li>
-          <li><a href="#blog">Blog</a></li>
+          {/* <li><a href="#blog">Blog</a></li> */}
         </ul>
       </nav>
     </header>

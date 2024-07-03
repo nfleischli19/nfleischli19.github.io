@@ -57,11 +57,35 @@
   padding-right: 2rem;
   padding-bottom: 3rem;
   /* background-color: blue; */
+  /* margin: 5rem;
+  background-color: #f5f5f5; */
+}
+.hexagon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  /* align-items: center; */
+  /* background-color: violet; */
+  /* width: 90%; */
+  padding: 3rem;
+  height: auto;
+  /* margin: 5rem; */
 }
 
 .tools-section h2 {
   font-size: clamp(2rem, 2vw, 50px); /* Dynamically adjust font size */
   margin-bottom: 1rem;
+}
+
+.tool-tile-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping to next line if necessary */
+  background-color: #F5F5F7;
+  border-radius: 1rem;
 }
 
 .tools-container {

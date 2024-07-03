@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Intro from './components/Intro';
 import About from './components/About';
+import Frameworks from './components/Frameworks';
 import Work from './components/Work';
 import Blog from './components/Blog';
 // import Project from './components/Project';
@@ -34,6 +35,9 @@ function App() {
                   </section>
                   <section id="about">
                     <About />
+                  </section>
+                  <section id="frameworks">
+                    <Frameworks />
                   </section>
                   <section id="work">
                     <Work />
