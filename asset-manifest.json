@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.336cde97.css",
-    "main.js": "/static/js/main.8d4deb4f.js",
+    "main.js": "/static/js/main.e7fe46d6.js",
     "static/js/453.0df90ecb.chunk.js": "/static/js/453.0df90ecb.chunk.js",
     "static/media/altedit_demo.mp4": "/static/media/altedit_demo.e3dd356548ae388d75b5.mp4",
     "static/media/Sketches.png": "/static/media/Sketches.676de28a1bb3a5c22bae.png",
@@ -49,11 +49,11 @@
     "static/media/carta_logo.png": "/static/media/carta_logo.d168becb20bba1a3fb98.png",
     "index.html": "/index.html",
     "main.336cde97.css.map": "/static/css/main.336cde97.css.map",
-    "main.8d4deb4f.js.map": "/static/js/main.8d4deb4f.js.map",
+    "main.e7fe46d6.js.map": "/static/js/main.e7fe46d6.js.map",
     "453.0df90ecb.chunk.js.map": "/static/js/453.0df90ecb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.336cde97.css",
-    "static/js/main.8d4deb4f.js"
+    "static/js/main.e7fe46d6.js"
   ]
 }
